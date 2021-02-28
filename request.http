@@ -1,0 +1,31 @@
+### echo Hello World!
+GET http://localhost:8080
+
+### Get All Books
+GET http://localhost:8080/api/v1/books
+
+### Get Books by ID
+GET http://localhost:8080/api/v1/books/603b0164087250327b35addb
+
+### Create Book
+POST http://localhost:8080/api/v1/books
+Content-Type: application/json
+
+{
+  "title": "test book1",
+  "author": "Joe",
+  "price": 1200
+}
+
+### Update Book By Id
+PUT http://localhost:8080/api/v1/books/603b0164087250327b35addb
+Content-Type: application/json
+
+{
+  "title": "update book1",
+  "author": "Joe",
+  "price": 1200
+}
+
+### Delete Book By ID
+DELETE http://localhost:8080/api/v1/books/603b0164087250327b35addb
